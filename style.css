@@ -45,6 +45,34 @@ main.cards {
   gap: 1rem;
 }
 
+main.cards div.card {
+  text-align: center;
+  box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+main.cards div.card:hover {
+  filter: brightness(95%);
+}
+
+main.cards div.card p {
+  padding-inline: 1rem;
+}
+
+main.cards div.card p+p {
+  margin-top: 1rem;
+}
+
+main.cards div.card p.description {
+  font-weight: 500;
+}
+
+main.cards div.card p.price {
+  color: mediumseagreen;
+  font-weight: 800;
+}
+
 main.cards div.card img {
   width: 100%;
   border-radius: 0.5rem;
