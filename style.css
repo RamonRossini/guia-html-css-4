@@ -5,23 +5,22 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #fbeaab;
   height: 100%;
   padding: 1.5rem;
   font-family: 'Open Sans', sans-serif;
 }
 
 header {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
-header h1 {
-  font-family: 'Amatic SC', cursive;
-  text-align: center;
+header img {
+  width: 100%;
 }
 
 nav {
-  background-color: gray;
+  background-color: #1c1c1c;
   margin-inline: -1.5rem;
   margin-bottom: 1rem;
   padding: 0.5rem 1.5rem;
@@ -33,10 +32,18 @@ nav {
 nav a {
   text-decoration: none;
   color: #fff;
+  display: flex;
+  column-gap: 0.5rem;
 }
 
 nav a:hover {
   text-decoration: underline;
+}
+
+
+nav img {
+  height: 22px;
+  filter: invert(99%) sepia(5%) saturate(116%) hue-rotate(310deg) brightness(121%) contrast(100%);
 }
 
 main.cards {
