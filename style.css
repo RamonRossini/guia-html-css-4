@@ -17,6 +17,7 @@ header {
 
 header img {
   width: 100%;
+  max-width: 20rem;
 }
 
 nav {
@@ -40,6 +41,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
+nav a.active {
+  background-color: #fff;
+  color: #000;
+  padding-inline: 0.5rem;
+  margin-block: -0.5rem;
+  align-items: center;
+}
 
 nav img {
   height: 22px;
@@ -52,35 +60,64 @@ main.cards {
   gap: 1rem;
 }
 
-main.cards div.card {
+main.cards a.card {
+  background-color: #f3f3f3;
   text-align: center;
   box-shadow: 1px 1px 7px 2px rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   padding-bottom: 1rem;
+  text-decoration: none;
 }
 
-main.cards div.card:hover {
+main.cards a.card:hover {
   filter: brightness(95%);
 }
 
-main.cards div.card p {
+main.cards a.card p {
   padding-inline: 1rem;
+  color: #1c1c1c;
 }
 
-main.cards div.card p+p {
+main.cards a.card p+p {
   margin-top: 1rem;
 }
 
-main.cards div.card p.description {
+main.cards a.card p.description {
   font-weight: 500;
 }
 
-main.cards div.card p.price {
+main.cards a.card p.price {
   color: mediumseagreen;
   font-weight: 800;
 }
 
-main.cards div.card img {
+main.cards a.card img {
   width: 100%;
   border-radius: 0.5rem;
+}
+
+@media (min-width: 820px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  nav img {
+    height: 1.5rem;
+  }
+
+  main.cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  main.cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
