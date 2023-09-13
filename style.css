@@ -13,6 +13,8 @@ body {
 
 header {
   margin-bottom: 1.5rem;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 header img {
@@ -60,6 +62,8 @@ main.cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 main.cards a.card {
@@ -102,6 +106,8 @@ main.product {
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem 1rem;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 main.product h1 {
@@ -132,7 +138,7 @@ main.product button {
   font-family: 'Open Sans';
 }
 
-main.product p + button {
+main.product p+button {
   margin-top: 1rem;
 }
 
@@ -157,6 +163,19 @@ main.product p + button {
 
   main.cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  main.product {
+    display: flex;
+    align-items: center;
+  }
+
+  main.product div {
+    flex: 1;
+  }
+
+  main.product div:last-child {
+    text-align: center;
   }
 }
 
